@@ -6,7 +6,7 @@ Nachbau für private Zwecke erlaubt), siehe [LICENSE](LICENSE)
 Hier liegen nur die fertig kompilierten Dateien der Firmware von Samba Solar Track, kein Quelltext. Das Repository ist
 die Release-Quelle unter <https://firmware.samba-solar.de/>: Die 10-Zoll-Version (Waveshare ESP32-P4-WIFI6-Touch-LCD-10.1
 mit der Platine RearCircuitBoard_10) sieht hier einmal am Tag nach neuer Firmware und installiert sie nur nach
-Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track-nachbau>.
+Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track>.
 
 **Aktuell: Firmware 0.4.8 (22.10.2026)**, Werksabbild 0.4.7
 
