@@ -18,7 +18,7 @@ Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https
 | `DRITTANBIETER.md` | Bibliotheken anderer Hersteller in der Firmware, mit Fassung, Lizenz, Quelle und vollständigen Lizenztexten |
 
 Wie die Firmware zum ersten Mal aufgespielt wird, steht im Handbuch der 10-Zoll-Version (Kapitel „Die Firmware zum
-ersten Mal aufspielen“). Die Firmware der 7-Zoll-Version wird hier nicht verteilt.
+ersten Mal aufspielen“).
 
 Die Firmware 0.4.8 ist die erste Fassung über diese Release-Quelle; das Update über das Internet wird mit ihr erst am
 Gerät erprobt. Sie lässt sich ab Firmware 0.4.7 über das Internet installieren. Ältere Firmware (bis 0.4.6) kennt den
