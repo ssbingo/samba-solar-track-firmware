@@ -1,0 +1,13 @@
+format=1
+product=samba-solar-track
+board=waveshare_10
+chip=18
+version=0.4.8
+min_from=0.4.7
+size=2894768
+sha512=c5880d78f6bec79f18c8d660aedf3b8e102d2d2d7c90b3cda6ea08ee15116ede425603d8a6891308186433c2e36853db2a187a33f8a5ece71ea3d6aa213436ac
+url=samba-solar-track-0.4.8-waveshare_10.bin
+date=2026-10-22
+notes=Test des Updates ueber das Internet
+key=2
+sig=3f72968784073313064ff1ad67caf70e9e38fbe1efe2e18b7173d202470e8dabac0c0da2690978a38137a473c8faf22c1d39662dcd113988d9cd8df7e2b82d0a

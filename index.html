@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samba Solar Track – Firmware</title>
+<style>
+:root{--bg:#f7f8fa;--fg:#1b2430;--muted:#5b6675;--card:#fff;--line:#dde2e8;--accent:#0f6f8f}
+@media (prefers-color-scheme:dark){:root{--bg:#12161c;--fg:#e6eaef;--muted:#9aa5b2;--card:#1b2129;--line:#2c3440;--accent:#5fc2e0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px}
+h1{font-size:1.6rem;margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+a{color:var(--accent)}code{font-size:.9em;word-break:break-all}
+footer{color:var(--muted);font-size:.85rem;margin-top:32px;border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<main>
+<h1>Samba Solar Track – Firmware</h1>
+<p class="sub">Release-Quelle der 10-Zoll-Version · nur fertig kompilierte Dateien, kein Quelltext</p>
+<div class="card"><strong>Aktuell: Firmware 0.4.8 (22.10.2026)</strong>, Werksabbild 0.4.7<br>
+Erste Fassung über diese Release-Quelle; das Update über das Internet wird mit ihr erst am Gerät erprobt. Installierbar über das Internet ab Firmware 0.4.7; ältere Firmware zuerst über die Weboberfläche oder USB auf 0.4.7 bringen.</div>
+<div class="card"><strong>Erstes Aufspielen über USB</strong> (Adresse 0x0, löscht alle Einstellungen)<br>
+<a href="erstinstallation/samba-solar-track-10zoll-0.4.7-factory.bin"><code>erstinstallation/samba-solar-track-10zoll-0.4.7-factory.bin</code></a><br>
+Anleitung: Handbuch der 10-Zoll-Version, Kapitel „Die Firmware zum ersten Mal aufspielen“.</div>
+<div class="card"><strong>Update</strong> (behält die Einstellungen; das Gerät holt es selbst unter Einrichtung → FIRMWARE)<br>
+<a href="v1/waveshare_10/manifest.txt"><code>v1/waveshare_10/manifest.txt</code></a><br>
+<a href="v1/waveshare_10/samba-solar-track-0.4.8-waveshare_10.bin"><code>v1/waveshare_10/samba-solar-track-0.4.8-waveshare_10.bin</code></a></div>
+<div class="card"><strong>Lizenzen der enthaltenen Bibliotheken</strong><br>
+<a href="DRITTANBIETER.md"><code>DRITTANBIETER.md</code></a></div>
+<div class="card"><strong>Nachbau</strong> (Platinen, Gehäuse, Handbuch)<br>
+<a href="https://github.com/ssbingo/samba-solar-track-nachbau">github.com/ssbingo/samba-solar-track-nachbau</a></div>
+<footer>© Silvio Sternitzke, 10/2026 · Samba Solar Track · Lizenz <a href="LICENSE">CC BY-NC-SA 4.0</a> (keine kommerzielle Verwendung, Nachbau für private Zwecke erlaubt); für die Bibliotheken anderer Hersteller gelten ihre eigenen Lizenzen.</footer>
+</main>
+</body>
+</html>
