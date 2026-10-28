@@ -1,4 +1,4 @@
-# Drittanbieter – Samba Solar Track Firmware 0.4.7 und 0.4.8
+# Drittanbieter – Samba Solar Track Firmware 0.4.7, 0.4.8 und 0.5.0
 
 **© Silvio Sternitzke, 10/2026** · Samba Solar Track · Lizenz CC BY-NC-SA 4.0 (keine kommerzielle Verwendung, Nachbau für private Zwecke erlaubt)
 
@@ -21,7 +21,7 @@ Erzeugt am 22.10.2026 aus dem Build der 10-Zoll-Firmware (gelinkte Komponenten l
 | LVGL | 8.4.0 | MIT | <https://github.com/lvgl/lvgl> |
 | ArduinoJson | 7.4.3 | MIT | <https://github.com/bblanchon/ArduinoJson> |
 | Monocypher | 4.0.3 | BSD-2-Clause oder CC0-1.0 | <https://monocypher.org/> |
-| Schrift Montserrat (Weboberfläche, Display) | – | SIL Open Font License 1.1 | <https://github.com/JulietaUla/Montserrat> |
+| Schrift Montserrat (Weboberfläche, Display; seit 0.5.0 am Display zusätzlich die Zeichen von Latin-1 und Latin Extended-A, aus Montserrat-Medium.ttf des LVGL-Pakets gerendert) | – | SIL Open Font License 1.1 | <https://github.com/JulietaUla/Montserrat> |
 | Initialisierungstabelle JD9365 (Board-Support von Waveshare / Espressif) | – | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_lcd_jd9365> |
 | Registerfolge ES8311 (esp_codec_dev von Espressif) | – | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_codec_dev> |
 | esp_hosted (WLAN über ESP32-C6) | 2.12.13 | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_hosted> |
