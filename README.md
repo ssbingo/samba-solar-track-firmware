@@ -8,12 +8,12 @@ die Release-Quelle unter <https://firmware.samba-solar.de/>: Die 10-Zoll-Version
 mit der Platine RearCircuitBoard_10) sieht hier einmal am Tag nach neuer Firmware und installiert sie nur nach
 Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track>.
 
-**Aktuell: Firmware 0.5.8 (10.11.2026)**, Werksabbild 0.4.7
+**Aktuell: Firmware 0.5.9 (10.11.2026)**, Werksabbild 0.4.7
 
 | Datei | Wofür |
 |---|---|
 | `v1/waveshare_10/manifest.txt` | signierte Beschreibung der aktuellen Firmware (Version, Größe, SHA-512, Signatur Ed25519); liest das Gerät |
-| `v1/waveshare_10/samba-solar-track-0.5.8-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
+| `v1/waveshare_10/samba-solar-track-0.5.9-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
 | `erstinstallation/samba-solar-track-10zoll-0.4.7-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
 | `DRITTANBIETER.md` | Bibliotheken anderer Hersteller in der Firmware, mit Fassung, Lizenz, Quelle und vollständigen Lizenztexten |
 
@@ -36,7 +36,8 @@ INBETRIEBNAHME, ab Werk aus). Die Firmware 0.5.5 zeigt den Ablauf dieses Resets 
 Weboberfläche (Phase, Restzeit, Ergebnis); 0.5.6 macht die Reset-Kontakte robuster (sicher offen nach
 einem Neustart); mit 0.5.7 springt die Anzeige nach der Bestätigung des Resets direkt zum
 Startbildschirm; mit 0.5.8 heißt die Bewegung der Elevation am Display und in der Weboberfläche
-STEILER / FLACHER statt RAUF / RUNTER. Alle fünf sind nur auf dem PC getestet. Sie lässt sich ab Firmware 0.4.7 über das
+STEILER / FLACHER statt RAUF / RUNTER; 0.5.9 zeigt diese Tasten auf Französisch, Spanisch und
+Portugiesisch zweizeilig, damit nichts abgeschnitten wird. Alle sechs sind nur auf dem PC getestet. Sie lässt sich ab Firmware 0.4.7 über das
 Internet installieren. Ältere Firmware (bis 0.4.6) kennt den
 heutigen Schlüssel nicht: Dort zuerst 0.4.7 über die Weboberfläche (EINRICHTUNG) oder per USB aufspielen.
 
