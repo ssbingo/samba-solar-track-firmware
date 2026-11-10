@@ -1,4 +1,4 @@
-# Drittanbieter – Samba Solar Track Firmware 0.4.7, 0.4.8, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6 und 0.5.7
+# Drittanbieter – Samba Solar Track Firmware 0.4.7, 0.4.8, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6, 0.5.7 und 0.5.8
 
 **© Silvio Sternitzke, 10/2026** · Samba Solar Track · Lizenz CC BY-NC-SA 4.0 (keine kommerzielle Verwendung, Nachbau für private Zwecke erlaubt)
 
