@@ -8,12 +8,12 @@ die Release-Quelle unter <https://firmware.samba-solar.de/>: Die 10-Zoll-Version
 mit der Platine RearCircuitBoard_10) sieht hier einmal am Tag nach neuer Firmware und installiert sie nur nach
 Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track>.
 
-**Aktuell: Firmware 0.5.9 (10.11.2026)**, Werksabbild 0.4.7
+**Aktuell: Firmware 0.6.0 (10.11.2026)**, Werksabbild 0.4.7
 
 | Datei | Wofür |
 |---|---|
 | `v1/waveshare_10/manifest.txt` | signierte Beschreibung der aktuellen Firmware (Version, Größe, SHA-512, Signatur Ed25519); liest das Gerät |
-| `v1/waveshare_10/samba-solar-track-0.5.9-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
+| `v1/waveshare_10/samba-solar-track-0.6.0-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
 | `erstinstallation/samba-solar-track-10zoll-0.4.7-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
 | `DRITTANBIETER.md` | Bibliotheken anderer Hersteller in der Firmware, mit Fassung, Lizenz, Quelle und vollständigen Lizenztexten |
 
@@ -37,7 +37,9 @@ Weboberfläche (Phase, Restzeit, Ergebnis); 0.5.6 macht die Reset-Kontakte robus
 einem Neustart); mit 0.5.7 springt die Anzeige nach der Bestätigung des Resets direkt zum
 Startbildschirm; mit 0.5.8 heißt die Bewegung der Elevation am Display und in der Weboberfläche
 STEILER / FLACHER statt RAUF / RUNTER; 0.5.9 zeigt diese Tasten auf Französisch, Spanisch und
-Portugiesisch zweizeilig, damit nichts abgeschnitten wird. Alle sechs sind nur auf dem PC getestet. Sie lässt sich ab Firmware 0.4.7 über das
+Portugiesisch zweizeilig, damit nichts abgeschnitten wird; 0.6.0 beschriftet die Prozentzahl am Sonnensensor als
+„Abweichung der Sonne“ (Rand des Kreises = 30 %) und zeigt die Neigung der Paneele als Skizze mit Winkel in Grad. Alle
+sieben sind nur auf dem PC getestet. Sie lässt sich ab Firmware 0.4.7 über das
 Internet installieren. Ältere Firmware (bis 0.4.6) kennt den
 heutigen Schlüssel nicht: Dort zuerst 0.4.7 über die Weboberfläche (EINRICHTUNG) oder per USB aufspielen.
 
