@@ -1,4 +1,4 @@
-# Drittanbieter – Samba Solar Track Firmware 0.7.2
+# Drittanbieter – Samba Solar Track Firmware 0.7.3
 
 **© Silvio Sternitzke, 10/2026** · Samba Solar Track · Lizenz CC BY-NC-SA 4.0 (keine kommerzielle Verwendung, Nachbau für private Zwecke erlaubt)
 
