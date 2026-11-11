@@ -1,10 +1,10 @@
-# Drittanbieter – Samba Solar Track Firmware 0.4.7, 0.4.8, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6, 0.5.7, 0.5.8, 0.5.9 und 0.6.0
+# Drittanbieter – Samba Solar Track Firmware 0.7.0
 
 **© Silvio Sternitzke, 10/2026** · Samba Solar Track · Lizenz CC BY-NC-SA 4.0 (keine kommerzielle Verwendung, Nachbau für private Zwecke erlaubt)
 
 Die Firmware von Samba Solar Track wird nur als fertig kompiliertes Abbild verteilt. Darin stecken Teile anderer Hersteller unter ihren eigenen Lizenzen; sie sind unten mit Fassung, Lizenz und Quelle aufgeführt, die Lizenztexte folgen vollständig. Diese Teile sind unverändert übernommen, soweit unten nicht anders angegeben. Für sie gelten allein ihre Lizenzen, nicht die Lizenz des Projekts.
 
-Erzeugt am 22.10.2026 aus dem Build der 10-Zoll-Firmware (gelinkte Komponenten laut Linker-Map).
+Erzeugt am 11.11.2026 aus dem Build der 10-Zoll-Firmware (gelinkte Komponenten laut Linker-Map).
 
 | Komponente | Fassung | Lizenz | Quelle |
 |---|---|---|---|
@@ -21,7 +21,10 @@ Erzeugt am 22.10.2026 aus dem Build der 10-Zoll-Firmware (gelinkte Komponenten l
 | LVGL | 8.4.0 | MIT | <https://github.com/lvgl/lvgl> |
 | ArduinoJson | 7.4.3 | MIT | <https://github.com/bblanchon/ArduinoJson> |
 | Monocypher | 4.0.3 | BSD-2-Clause oder CC0-1.0 | <https://monocypher.org/> |
-| Schrift Montserrat (Weboberfläche, Display; seit 0.5.0 am Display zusätzlich die Zeichen von Latin-1 und Latin Extended-A, aus Montserrat-Medium.ttf des LVGL-Pakets gerendert) | – | SIL Open Font License 1.1 | <https://github.com/JulietaUla/Montserrat> |
+| Leaflet (Karte der Weboberfläche) | 1.9.4 | BSD-2-Clause | <https://leafletjs.com/> |
+| Natural Earth (Küsten, Grenzen, Seen, Namen großer Städte für die Karte am Display) | – | gemeinfrei (Public Domain) | <https://www.naturalearthdata.com/> |
+| GeoNames cities5000 (Ortsliste der Suche am Display) | – | CC BY 4.0 | <https://www.geonames.org/> |
+| Schrift Montserrat (Weboberfläche, Display) | – | SIL Open Font License 1.1 | <https://github.com/JulietaUla/Montserrat> |
 | Initialisierungstabelle JD9365 (Board-Support von Waveshare / Espressif) | – | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_lcd_jd9365> |
 | Registerfolge ES8311 (esp_codec_dev von Espressif) | – | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_codec_dev> |
 | esp_hosted (WLAN über ESP32-C6) | 2.12.13 | Apache-2.0 | <https://components.espressif.com/components/espressif/esp_hosted> |
@@ -3135,6 +3138,51 @@ worldwide.  This software is distributed without any warranty.
 You should have received a copy of the CC0 Public Domain Dedication along
 with this software.  If not, see
 <https://creativecommons.org/publicdomain/zero/1.0/>
+```
+
+### Leaflet (BSD-2-Clause)
+
+```text
+BSD 2-Clause License
+
+Copyright (c) 2010-2023, Volodymyr Agafonkin
+Copyright (c) 2010-2011, CloudMade
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
+
+### Natural Earth (gemeinfrei)
+
+```text
+All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. The primary authors, Tom Patterson and Nathaniel Vaughn Kelso, and all other contributors renounce all financial claim to the maps and invites you to use them for personal, educational, and commercial purposes. No permission is needed to use Natural Earth. Crediting the authors is unnecessary. (https://www.naturalearthdata.com/about/terms-of-use/)
+
+Verwendet: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.
+```
+
+### GeoNames (Creative Commons Attribution 4.0)
+
+```text
+Ortsliste: GeoNames (https://www.geonames.org/), Datei cities5000, Lizenz Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Für die Firmware umgewandelt (tools/karte_erzeugen.py): Koordinaten auf 1/100 Grad gerundet, Namen außerhalb der Schrift des Displays durch die lateinische Schreibweise ersetzt, ergänzt um Namen großer Städte aus Natural Earth. Die Quelle nennt das Display auf der Seite STANDORT.
 ```
 
 ### SIL Open Font License 1.1 (Montserrat)
