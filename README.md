@@ -8,13 +8,13 @@ die Release-Quelle unter <https://firmware.samba-solar.de/>: Die 10-Zoll-Version
 mit der Platine RearCircuitBoard_10) sieht hier einmal am Tag nach neuer Firmware und installiert sie nur nach
 Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track>.
 
-**Aktuell: Firmware 0.7.4 (11.11.2026)**, Werksabbild 0.7.4
+**Aktuell: Firmware 0.7.5 (11.11.2026)**, Werksabbild 0.7.5
 
 | Datei | Wofür |
 |---|---|
 | `v1/waveshare_10/manifest.txt` | signierte Beschreibung der aktuellen Firmware (Version, Größe, SHA-512, Signatur Ed25519); liest das Gerät |
-| `v1/waveshare_10/samba-solar-track-0.7.4-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
-| `erstinstallation/samba-solar-track-10zoll-0.7.4-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
+| `v1/waveshare_10/samba-solar-track-0.7.5-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
+| `erstinstallation/samba-solar-track-10zoll-0.7.5-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
 | `DRITTANBIETER.md` | Bibliotheken anderer Hersteller in der Firmware, mit Fassung, Lizenz, Quelle und vollständigen Lizenztexten |
 
 Wie die Firmware zum ersten Mal aufgespielt wird, steht im Handbuch der 10-Zoll-Version (Kapitel „Die Firmware zum
@@ -44,12 +44,13 @@ Nachtstellung (bei zwei Achsen auf Wunsch nach Osten), bringt eine eingebaute St
 Setup-Programm, das alle Funktionen und Fahrwege am Rack einmal prüft; 0.7.1 teilt den Speicher des Boards neu auf
 (beide Plätze für die Firmware unter 16 MB); 0.7.2 bildet im Setup-Programm in der Simulation die Handgriffe am Rack
 nach; 0.7.3 zeigt nach dem bestandenen Schritt Windmesser die Taste WEITER (fehlte seit 0.7.0); 0.7.4 zeigt im
-Setup-Programm die Wartezeit, wenn die Antriebe eine Pause brauchen (Einschaltdauer), und den Ablauf des Resets. Alle sind nur auf dem PC getestet.
+Setup-Programm die Wartezeit, wenn die Antriebe eine Pause brauchen (Einschaltdauer), und den Ablauf des Resets; 0.7.5 erkennt im Schritt „Winkel anfahren“ das Erreichen der 30 Grad (blieb seit 0.7.0
+stehen). Alle sind nur auf dem PC getestet.
 
 **Wichtig – einmal per USB:** Bis Firmware 0.7.0 war der Speicher so aufgeteilt, dass eine Firmware über etwa 3,4 MB
 nur in einen der beiden Plätze passte; das Update auf 0.7.0 scheiterte deshalb meist mit
 `ESP_ERR_OTA_VALIDATE_FAILED` (die bisherige Firmware lief weiter). Die neue Aufteilung kommt nur über das USB-Kabel aufs
-Board: einmal das Werksabbild `erstinstallation/samba-solar-track-10zoll-0.7.4-factory.bin` an Adresse 0x0 aufspielen
+Board: einmal das Werksabbild `erstinstallation/samba-solar-track-10zoll-0.7.5-factory.bin` an Adresse 0x0 aufspielen
 (löscht die Einstellungen). Danach kommen alle Versionen wieder über das Internet. Ältere Firmware (bis 0.4.6) kennt
 den heutigen Schlüssel ohnehin nicht; auch dort hilft das Werksabbild.
 
