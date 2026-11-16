@@ -8,13 +8,13 @@ die Release-Quelle unter <https://firmware.samba-solar.de/>: Die 10-Zoll-Version
 mit der Platine RearCircuitBoard_10) sieht hier einmal am Tag nach neuer Firmware und installiert sie nur nach
 Bestätigung. Unterlagen für den Nachbau (Platinen, Gehäuse, Handbuch): <https://github.com/ssbingo/samba-solar-track>.
 
-**Aktuell: Firmware 0.8.0 (16.11.2026)**, Werksabbild 0.8.0
+**Aktuell: Firmware 0.8.1 (16.11.2026)**, Werksabbild 0.8.1
 
 | Datei | Wofür |
 |---|---|
 | `v1/waveshare_10/manifest.txt` | signierte Beschreibung der aktuellen Firmware (Version, Größe, SHA-512, Signatur Ed25519); liest das Gerät |
-| `v1/waveshare_10/samba-solar-track-0.8.0-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
-| `erstinstallation/samba-solar-track-10zoll-0.8.0-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
+| `v1/waveshare_10/samba-solar-track-0.8.1-waveshare_10.bin` | Abbild für das Update über das Internet oder das Netz; behält die Einstellungen |
+| `erstinstallation/samba-solar-track-10zoll-0.8.1-factory.bin` | Werksabbild für das erste Aufspielen über USB an Adresse 0x0, zum Beispiel mit <https://web.esphome.io/>; **löscht alle Einstellungen** |
 | `DRITTANBIETER.md` | Bibliotheken anderer Hersteller in der Firmware, mit Fassung, Lizenz, Quelle und vollständigen Lizenztexten |
 
 Wie die Firmware zum ersten Mal aufgespielt wird, steht im Handbuch der 10-Zoll-Version (Kapitel „Die Firmware zum
@@ -48,12 +48,13 @@ Setup-Programm die Wartezeit, wenn die Antriebe eine Pause brauchen (Einschaltda
 stehen); 0.7.6 zeigt den Prüfbericht in der Weboberfläche als gestaltetes Blatt (hell oder dunkel) zum Speichern als PDF; 0.7.7 zeigt den Reset der
 Synchronsteuerung im Setup-Programm als blaues Feld mit Phase, Restzeit und Fortschritt; 0.7.8 setzt im PDF des
 Prüfberichts die Tabelle der Schritte auf Seite 2; 0.8.0 bringt in der Weboberfläche den Einstell-Assistenten,
-der alle Werte einzeln mit Bild, Erklärung und Empfehlung durchgeht. Alle sind nur auf dem PC getestet.
+der alle Werte einzeln mit Bild, Erklärung und Empfehlung durchgeht; 0.8.1 zeigt dort die bestückte Platine mit
+genau markierter Klemme. Alle sind nur auf dem PC getestet.
 
 **Wichtig – einmal per USB:** Bis Firmware 0.7.0 war der Speicher so aufgeteilt, dass eine Firmware über etwa 3,4 MB
 nur in einen der beiden Plätze passte; das Update auf 0.7.0 scheiterte deshalb meist mit
 `ESP_ERR_OTA_VALIDATE_FAILED` (die bisherige Firmware lief weiter). Die neue Aufteilung kommt nur über das USB-Kabel aufs
-Board: einmal das Werksabbild `erstinstallation/samba-solar-track-10zoll-0.8.0-factory.bin` an Adresse 0x0 aufspielen
+Board: einmal das Werksabbild `erstinstallation/samba-solar-track-10zoll-0.8.1-factory.bin` an Adresse 0x0 aufspielen
 (löscht die Einstellungen). Danach kommen alle Versionen wieder über das Internet. Ältere Firmware (bis 0.4.6) kennt
 den heutigen Schlüssel ohnehin nicht; auch dort hilft das Werksabbild.
 
